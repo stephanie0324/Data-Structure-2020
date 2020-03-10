@@ -73,11 +73,8 @@ int inputGraphInfo(int* neighbors[], int degrees[])
     int nodeCnt = 0;
     cin >> nodeCnt;
     for(int i = 0; i < nodeCnt; i++) {
-        // cout << "Node " << i
-        // << "\'s degree is: ";
         cin >> degrees[i];
-        neighbors[i] = new int[degrees[i]]; // cout << "Node " << i
-        // << "\'s neighbors: "; for(int j = 0; j < degrees[i]; j++)
+        neighbors[i] = new int[degrees[i]];
         for(int j = 0; j < degrees[i]; j++)
             cin >> neighbors[i][j];
     }
@@ -130,11 +127,8 @@ int inputGraphInfo(int**& neighbors, int *&degrees)
     neighbors = new int*[nodeCnt];
     degrees = new int [nodeCnt];
     for(int i = 0; i < nodeCnt; i++) {
-        // cout << "Node " << i
-        // << "\'s degree is: ";
         cin >> degrees[i];
-        neighbors[i] = new int[degrees[i]]; // cout << "Node " << i
-        // << "\'s neighbors: "; for(int j = 0; j < degrees[i]; j++)
+        neighbors[i] = new int[degrees[i]];
         for(int j = 0; j < degrees[i]; j++)
             cin >> neighbors[i][j];
     }
