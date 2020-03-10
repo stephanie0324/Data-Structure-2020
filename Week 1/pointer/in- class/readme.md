@@ -1,4 +1,4 @@
-# Week 1 Answer
+# Answer
 ## Problem 1
 ```
 int main()
