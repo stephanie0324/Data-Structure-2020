@@ -288,6 +288,7 @@ bool isInDict(string target, string dict[], int wordCnt)
 }
 ```
 ## problem 8
+```
 // class definition of MyVector
 class MyVector
 {
@@ -453,3 +454,4 @@ istream& operator>>(istream& in, MyVector& v)
     in >> v.m[i];
   return in;
 }
+```
