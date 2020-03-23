@@ -10,43 +10,77 @@
 #include  <cctype>
 #include <cstring>
 #include <cmath>
+#include <cctype>
 using namespace std;
- 
+
+//int main(){
+//    int cnt=0;
+//    string sen = "";
+//    getline(cin, sen);
+//    long len = sen.length();
+//    char sub[len+1];
+//    int new_sub[len+1];
+//    strcpy(sub, sen.c_str());
+//    char delim[]=".,";
+//    char blankspace[] = " ";
+//    char *start = strtok(sub, delim);
+//    while(start != nullptr)
+//    {
+//        if(isalpha(start[0])){
+//           cnt ++;
+//            cout << "y" <<endl;
+//        }
+//        else if (isblank(start[0]) &&  cnt ==0)
+//            cnt +=2;
+//        start = strtok(nullptr, delim);
+//    }
+//    cout << cnt <<endl;
+//}
+
+
 struct Node
 {
     int Gen;
     int words;
 };
 
+
+
 int countWords( string sub )
 {
     int wcnt =0;
     //處理字串個數
-           long sublength = sub.length();
-           int senCnt = 0 , wordCnt = 0;
-           char sub_array[sublength + 1];
-           char sub_2[sublength+1];
-           strcpy(sub_array, sub.c_str());
-           strcpy(sub_2, sub_array);
-           
+    long sublength = sub.length();
+    int senCnt = 0 , wordCnt = 0;
+    char sub_array[sublength + 1];
+    char sub_2[sublength+1];
+    strcpy(sub_array, sub.c_str());
+     strcpy(sub_2, sub_array);
+
            //數句子
-           char delim[] = ".,!?;";
-           char *start  =strtok(sub_array, delim);
-           while(start != nullptr){
-               senCnt++;
-               start = strtok(nullptr, delim);
-           }
-           //數字數
-           char bar_delim[] = " ";
-           char *bar = strtok(sub_2, bar_delim);
-           while (bar!=nullptr) {
-               wordCnt++;
-               bar = strtok(nullptr, bar_delim);
-           }
-           wcnt += wordCnt/senCnt;
+    char delim[] = ".,!?;";
+    char *start  =strtok(sub_array, delim);
+    while(start != nullptr){
+       if(!isdigit(start[0]))
+             senCnt++;
+       else if (isblank(start[0])&& senCnt ==0)
+           senCnt +=2;
+        start = strtok(nullptr, delim);
+    }
+    //數字數
+    char bar_delim[] = " ";
+    char *bar = strtok(sub_2, bar_delim);
+    while (bar!=nullptr) {
+        wordCnt++;
+        bar = strtok(nullptr, bar_delim);
+    }
+    if(senCnt==0)
+        senCnt++;
+    wcnt += wordCnt/senCnt;
     return wcnt;
 }
- 
+
+//找出最好的臨界值 將平均字數的最大值與最小值射程臨界值的邊界
 int findBestVal( Node nodes[] , int minT , int maxT , int n)
 {
     int avg_wcnt = 0;
@@ -71,20 +105,22 @@ int findBestVal( Node nodes[] , int minT , int maxT , int n)
             avg_wcnt = tmp_val;
         }
     }
-    
+
     return avg_wcnt;
 }
 
-
-
-
+/*
+ 先讀取 幾個測資 幾個被側
+ 將句子讀入 分割性別 與句子本身
+ 用陣列記得正確性別 用以找出最佳臨界值
+ */
 
 int main()
 {
     int n = 0 , m = 0;
     cin >> n >> m;
-   
-     
+
+
     //-------------- Training Sets---------------------
     int num =0;
     int wcnt = 0;
@@ -95,14 +131,14 @@ int main()
     string sub = " ";
     Node nodes[n];
 
- 
+
     for(int i  = 0 ; i < n ; i++){
         getline(cin, gender , ';');
         getline(cin , sub);
         num = stoi(gender);
         nodes[i].Gen= num;
         wcnt = countWords(sub);
-        nodes[i].words = countWords(sub);
+        nodes[i].words = wcnt;
         if(wcnt < minT)
             minT = wcnt;
         if(wcnt > maxT)
@@ -112,17 +148,17 @@ int main()
     //----------在測試值之中找出最好的測值------------------
 
     avg_wcnt = findBestVal(nodes, minT, maxT, n) ;
-    
-    
-    
-    
-     
+
+
+
+
+
 //-------------- Validation Set --------------
     int *correctAns;
     correctAns = new int [m];
     int *guessAns =0;
     guessAns = new int [m];
-    
+
     for(int i =0; i<m ; i++){
         getline(cin, gender , ';');
         getline(cin,sub);
@@ -135,7 +171,7 @@ int main()
         else
             guessAns[i] = 2;
     }
-     
+
 /*
  檢查correct answer 是否有被存
  */
@@ -151,7 +187,7 @@ int main()
 //    for(int i = 0 ;i < m ; i++)
 //         cout << guessAns_3[i] << " ";
 //     cout << endl;
-   
+
 //-------------------比對--------------------
     int wrongCnt = 0;
     for(int i = 0 ; i < m ; i++)
@@ -159,8 +195,8 @@ int main()
             wrongCnt++;
 
     cout << avg_wcnt << "," << wrongCnt <<endl;
-    
-    
+
+
     delete [] correctAns;
     delete [] guessAns;
 
