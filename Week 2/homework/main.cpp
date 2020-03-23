@@ -13,31 +13,6 @@
 #include <cctype>
 using namespace std;
 
-//int main(){
-//    int cnt=0;
-//    string sen = "";
-//    getline(cin, sen);
-//    long len = sen.length();
-//    char sub[len+1];
-//    int new_sub[len+1];
-//    strcpy(sub, sen.c_str());
-//    char delim[]=".,";
-//    char blankspace[] = " ";
-//    char *start = strtok(sub, delim);
-//    while(start != nullptr)
-//    {
-//        if(isalpha(start[0])){
-//           cnt ++;
-//            cout << "y" <<endl;
-//        }
-//        else if (isblank(start[0]) &&  cnt ==0)
-//            cnt +=2;
-//        start = strtok(nullptr, delim);
-//    }
-//    cout << cnt <<endl;
-//}
-
-
 struct Node
 {
     int Gen;
