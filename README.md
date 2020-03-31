@@ -11,8 +11,8 @@
 
 ## Week 3 (3/24) - Inheritance(繼承) & Polymorphism (多型)
   1. Inheritance
-    * three main functionalities of OOP - Inheritance , Polymorphism , Encapsulation
-    * create new class from exisiting class
+      * three main functionalities of OOP - Inheritance , Polymorphism , Encapsulation
+      * create new class from exisiting class
   2. Polymorphism
-    * binding - early / late binding
-    * virtual function
+      * binding - early / late binding
+      * virtual function
