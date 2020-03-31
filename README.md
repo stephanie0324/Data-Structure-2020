@@ -16,3 +16,14 @@
   2. Polymorphism
       * binding - early / late binding
       * virtual function
+
+## Week 4 (3/31) - Templates & Exception Handling
+  1. Templates : generic programming
+      * template <typename T>
+  2. Vector
+      * push_back()從後面加上一個數字
+      * pop_back() 從後面刪掉一個數字
+  3. Exception Handling
+      * try and catch -> try 抓到錯誤就丟給catch 可以cout 來檢查是否有錯誤 
+      * throw (logic_error e ) -> catch(logic_error e) cout  << e.what()
+      * noexecpt; -> for functions that does not generate error
