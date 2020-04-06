@@ -27,3 +27,15 @@
       * try and catch -> try 抓到錯誤就丟給catch 可以cout 來檢查是否有錯誤 
       * throw (logic_error e ) -> catch(logic_error e) cout  << e.what()
       * noexecpt; -> for functions that does not generate error
+  
+## Week 5 (4/7) - Arrays and linked-base bags
+  1. Abstract data types
+      * OOA,OOD and OOP
+      * operation contracts - documentation
+      * ADT bag
+  2. Array based implementation
+      * static-array
+      * dynamic-array
+  3. Linked-base Array
+      * Node
+      * M
