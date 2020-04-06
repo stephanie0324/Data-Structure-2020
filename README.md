@@ -38,4 +38,5 @@
       * dynamic-array
   3. Linked-base Array
       * Node
-      * M
+      * Member function
+      * Constructor & destructor
