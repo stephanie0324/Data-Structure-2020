@@ -610,4 +610,4 @@ int LinkedBag<ItemType>::getTypeCount()
 }
 ```
 
-##problem 6 
+##problem 6 - distinct bag
