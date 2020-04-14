@@ -52,5 +52,5 @@
       * the knapsack problem
         * dynamic programing algorithm
       * the maximimflow problem
-        *
+        * residual networks
   
