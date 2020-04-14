@@ -40,3 +40,17 @@
       * Node
       * Member function
       * Constructor & destructor
+## Week 6 (4/14) - Recursion & Algorithm Efficiency
+  1. Recursion
+      * Basic concpets
+        * Binary search
+        * Factorial(階層)and Maximum
+        * choosing k out of n g(n,k)->  base trace = g(k,k) or g(n,0)
+      * Number of recursive  
+        * Recursion vs Iteration
+  2. Alogorithm
+      * the knapsack problem
+        * dynamic programing algorithm
+      * the maximimflow problem
+        *
+  
