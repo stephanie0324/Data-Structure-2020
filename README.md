@@ -53,4 +53,14 @@
         * dynamic programing algorithm
       * the maximimflow problem
         * residual networks
+
+## Week 7 (4/21)- Stacks
+  1. Intro
+  2. Application of stack
+      * calculator
+      * graph search 
+      * recursion
+  3. Implementation of stack
+      *
+
   
