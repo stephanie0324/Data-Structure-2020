@@ -61,6 +61,20 @@
       * graph search 
       * recursion
   3. Implementation of stack
-      *
-
+    
+## Week 8 (5/5) - Lists
+  1. The ADT lists opertations
+      * empty
+      * get the number
+      * insert
+      * remove
+      * remove all
+      * get(position) - look at the entry at a specific position
+      * setEntry(position , newEntry) - replace an entry at a specific position
+  2. Lists implementation
+      * array-based list (different from array , list is not fixed size)
+      * linked-list
+        * assert:作用是現計算表示式 expression ，如果其值為假（即為0），那麼它先向stderr列印一條出錯資訊，然後通過呼叫 abort 來終止程式執行。
+  3. Sorted list & implementation
+  
   
