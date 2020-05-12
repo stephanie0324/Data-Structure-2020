@@ -77,4 +77,17 @@
         * assert:作用是現計算表示式 expression ，如果其值為假（即為0），那麼它先向stderr列印一條出錯資訊，然後通過呼叫 abort 來終止程式執行。
   3. Sorted list & implementation
   
-  
+## Week 9 (5/12) - Queues
+  1. Queues and Priority queues
+      * the ADT queue - first in first out
+          * isEmpty(): see whether queue is empty
+          * enqueue(newEntry): 將 newEntry 加到最後一個
+          * dequeue(): 將第一個移除
+          * peekFront(): return the first position
+      * recognizing palindromes(回文)
+          * stack + queue
+      * ADT proiortuy queue
+          * each item is associated with a proiority
+      
+  2. Application
+      *
