@@ -90,4 +90,6 @@
           * each item is associated with a proiority
       
   2. Application
-      *
+      * simulation
+      * queues array based
+      * queues linked based
