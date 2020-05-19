@@ -114,10 +114,10 @@
       * Retrieve
       * Test - whether the tree is empty
       * Traversal - operation that visits every node
-          * recursive triversal algo
-            -> If tree is not empty
-              -> Display the root
-              -> Traverse the two subtrees (習管先走左邊)
-            -> Base case : if tree is empty , algo takes no action
+          * recursive triversal algo   
+              -> If tree is not empty   
+               -> Display the root   
+               -> Traverse the two subtrees (習管先走左邊)   
+              -> Base case : if tree is empty , algo takes no action   
   
    
