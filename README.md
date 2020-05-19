@@ -95,10 +95,16 @@
       * queues linked based
       
 ## Week 10 (5/19) - Trees
-  1. Terminology 
-    * trees are composed of nodes(vertex) and edges.
-    * trees are hierarchical
-    * each node has at most *one* parent
-    * no children is called a *leaf*
-  2. Kinds o t
+  1. Trees
+      * Terminology 
+         * trees are composed of nodes(vertex) and edges.
+         * trees are hierarchical
+         * each node has at most *one* parent
+         * no children is called a *leaf*
+      * Kinds of tree
+         * a genaral tree
+         * n-ary tree
+      *
+        
+  3.
    
