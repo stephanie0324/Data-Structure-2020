@@ -120,4 +120,4 @@
                -> Traverse the two subtrees (習管先走左邊)   
               -> Base case : if tree is empty , algo takes no action   
   
-   
+   3
