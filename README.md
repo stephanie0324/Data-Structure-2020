@@ -93,3 +93,12 @@
       * simulation
       * queues array based
       * queues linked based
+      
+## Week 10 (5/19) - Trees
+  1. Terminology 
+    * trees are composed of nodes(vertex) and edges.
+    * trees are hierarchical
+    * each node has at most *one* parent
+    * no children is called a *leaf*
+  2. Kinds o t
+   
