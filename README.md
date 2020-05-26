@@ -121,4 +121,7 @@
               -> Base case : if tree is empty , algo takes no action   
   
    3. implementation of ADT Binary Tree
-    *
+
+## Week 11 (5/26) - Heap
+  1. Max heap - root is larger than anyone
+  2. Min heap - root is smaller than anyone
