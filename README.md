@@ -130,4 +130,9 @@
   1. The ADT Dictionary
       * Data - finite objects associated with search keys
       * Operations - isEmpty(),getNumberofItems(),add(),remove(),clear()
-      * Traverse -
+    
+## Week 13 (6/9) - Graph
+  1. Edge
+  2. Path
+      * simple path - passes through a vertex only once
+  3
