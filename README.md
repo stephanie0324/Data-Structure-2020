@@ -125,3 +125,9 @@
 ## Week 11 (5/26) - Heap
   1. Max heap - root is larger than anyone
   2. Min heap - root is smaller than anyone
+
+## Week 12 (6/2) - Dictionary(MAp or Table)
+  1. The ADT Dictionary
+    * Data - finite objects associated with search keys
+    * Operations - isEmpty(),getNumberofItems(),add(),remove(),clear()
+    * Traverse -
