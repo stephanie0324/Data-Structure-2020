@@ -128,6 +128,6 @@
 
 ## Week 12 (6/2) - Dictionary(MAp or Table)
   1. The ADT Dictionary
-    * Data - finite objects associated with search keys
-    * Operations - isEmpty(),getNumberofItems(),add(),remove(),clear()
-    * Traverse -
+      * Data - finite objects associated with search keys
+      * Operations - isEmpty(),getNumberofItems(),add(),remove(),clear()
+      * Traverse -
