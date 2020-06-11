@@ -135,4 +135,7 @@
   1. Edge
   2. Path
       * simple path - passes through a vertex only once
-  3
+  3.Depth-First-Search
+  4.BFS
+  5.Topological
+      * topological orders - A list of verticles in directed order without cycles
