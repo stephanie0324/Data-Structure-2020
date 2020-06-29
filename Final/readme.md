@@ -9,6 +9,11 @@
 * version_1
     1. 將過去走過的路也記錄下來，避免重複同樣道路
     2. 吃到得分點後，走過的道路會消除
+* 0629
+    1. 針對同一個地圖，只會做一次目標找尋，一直到吃到食物才會將 first_cnt = true;
+* turnCountSnake
+    1. 每一次都會計算蛇有幾個轉彎處，勁量將轉彎處控制在3個以下
+    2. 如果超過三個轉彎處，就讓蛇先前行直到轉彎處低於3，若遇到障礙物不得轉彎，就在下一次繼續前嫌行直到轉彎處減少，一直重複執行直到吃到食物
 ### Other files
 * [writing_map.py](https://github.com/stephanie0324/Data-Structure-2020/blob/master/Final/writing_map.py) - 將助教的map 獨進之後輸出成c++ vector的格式
 * [random_map.py](https://github.com/stephanie0324/Data-Structure-2020/blob/master/Final/random_map.py) - 自己製作地圖，製造不只一個分數點，與不只一個障礙，隨機分佈在地圖中
